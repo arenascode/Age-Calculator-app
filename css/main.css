@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit; }
+
+ol,
+ul {
+  list-style: none; }
+
+/* Estilos de imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block; }
+
+:root {
+  --color-purple: hsl(259, 100%, 65%);
+  --color-light-red: hsl(0, 100%, 67%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-off-white: hsl(0, 0%, 94%);
+  --color-light-grey: hsl(0, 0%, 86%);
+  --color-smokey-grey: hsl(0, 1%, 44%);
+  --color-off-black: hsl(0, 0%, 8%);
+  /* Poppins regular (400) */
+  --font-poppins: 'Poppins', sans-serif;
+  --font-weight-poppins-regular: 400;
+  /* Poppins semibold (700) */
+  --font-weight-poppins-semibold: 700;
+  /* Poppins extrabold (800) */
+  --font-weight-poppins-extrabold: 800; }
+
+body {
+  font-family: 'popins', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-light-grey); }
+
+input {
+  font-size: 32px; }
+
+.ageCalculatorContainer {
+  width: calc(100% - 20px);
+  margin: 100px 15px 0 15px;
+  border-radius: 20px 20px 60px 20px;
+  padding: 15px;
+  background-color: white; }
+
+#inputsDate {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 40px 3px 50px 3px;
+  overflow: hidden; }
+
+#inputsDate label {
+  width: 45%;
+  height: 100px; }
+
+label {
+  font-weight: var(--font-weight-poppins-semibold);
+  color: var(--color-smokey-grey);
+  letter-spacing: 3px;
+  padding: 5px; }
+  label input {
+    width: 100%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--color-light-grey);
+    margin-top: 5px;
+    height: 70%;
+    font-family: var(--font-poppins);
+    padding-left: 15px; }
+
+#circleDecoration {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: var(--color-purple);
+  position: absolute;
+  left: 150px;
+  top: 280px;
+  display: flex;
+  justify-content: center; }
+  #circleDecoration img {
+    width: 38px; }
