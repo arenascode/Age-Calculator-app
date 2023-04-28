@@ -27,9 +27,6 @@ function requiredYear() {
   spans[2].style.display = "block";
 }
 
-
-
-
 if (form instanceof HTMLFormElement) {
   function calculateResult(e) {
     e.preventDefault()
@@ -39,7 +36,6 @@ if (form instanceof HTMLFormElement) {
     const yearInput = dataForm.get('year')
     
     dayInput === "" ? requiredDay(): console.log(`there is data`)
-    
     
     monthInput === ""
       ? requiredMonth()
