@@ -8,27 +8,30 @@
 </head>
 <body>
 <div class="ageCalculatorContainer">
-  <div id="inputsDate">
-    <label for="day">DAY <input type="text" name="day"></label>
+  <form id="inputsDate" onsubmit="calculateResult(event)">
+    <label for="day">DAY <input type="text" name="day" placeholder="DD"><span>this field is required</span></label>
    
-    <label for="month">MONTH<input type="text" name="month"></label>
+    <label for="month">MONTH<input type="text" name="month" placeholder="MM"><span>this field is required</span></label>
     
-    <label for="year">YEAR<input type="text" name="year"></label>
+    <label for="year">YEAR<input type="text" name="year" placeholder="YY"><span>this field is required</span></label>
     
-  </div>
-  <div id="circleDecoration"><img src="/assets/images/icon-arrow.svg" alt=""></div>
+  </form>
+  <button type="submit" form="inputsDate" id="circleButton">
+    <img src="/assets/images/icon-arrow.svg" alt="">
+  </button>
   <hr>
   <div id="showResult">
-    dfhbdf
-    <br>
-    sdsds
-    <br>
-    dfhbdf
-    <br>
-    sdsds
-    <br>
-    
+    <div id="yearResult">
+      <div id="showYear">- -</div> <p>years</p> 
+    </div>
+    <div id="monthResult">
+      <div id="showMonth">- -</div> <p>months</p> 
+    </div>
+    <div id="dayResult">
+      <div id="showDay">- -</div> <p>days</p> 
+    </div>
   </div>
 </div>
+<script src="./index.js"></script>
 </body>
 </html>

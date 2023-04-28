@@ -40,7 +40,7 @@ input {
 }
 .ageCalculatorContainer {
   width: calc(100% - 20px);
-  margin: 100px 15px 0 15px;
+  margin: 100px 15px 15px 15px;
   border-radius: 20px 20px 60px 20px;
   padding: 15px;
   background-color: white;
@@ -75,10 +75,13 @@ label {
     font-family: var(--font-poppins);
     padding-left: 15px;
   }
-  
+  input:hover {
+    border-color: var(--color-purple);
+    cursor: pointer;
+  }
 }
-// Circle Decoration 
-#circleDecoration {
+// Circle Button Decoration 
+#circleButton {
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -88,7 +91,64 @@ label {
   top: 280px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
   img {
     width: 38px;
+  }
+}
+#circleButton:hover {
+  background-color: black;
+  }
+// Show result date count
+
+#showResult {
+  margin-top: 50px;
+  justify-content: center;
+  padding-left: 40px;
+  margin-bottom: 30px;
+
+  #yearResult, #monthResult, #dayResult {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--font-poppins);
+  font-style: italic;
+  font-size: 42px;
+  font-weight: var(--font-weight-poppins-extrabold);
+  div {
+    color: var(--color-purple);
+    margin-right: 10px;
+  }
+  }
+}
+
+// Errors 
+label[for="day"] {
+  span {
+    font-size: 8px;
+    letter-spacing: 0;
+    font-style: italic;
+    color: var(--color-light-red);
+    display: none;
+    padding-left: 5px;
+  }
+}
+label[for="month"] {
+  span {
+    font-size: 8px;
+    letter-spacing: 0;
+    font-style: italic;
+    color: var(--color-light-red);
+    display: none;
+    padding-left: 5px;
+  }
+}
+label[for="year"] {
+  span {
+    font-size: 8px;
+    letter-spacing: 0;
+    font-style: italic;
+    color: var(--color-light-red);
+   display: none;
+    padding-left: 5px;
   }
 }
