@@ -99,7 +99,7 @@ label {
     margin-top: 5px;
     height: 70%;
     font-family: var(--font-poppins);
-    padding-left: 15px; }
+    padding-left: 8px; }
   label input:hover {
     border-color: var(--color-purple);
     cursor: pointer; }
@@ -114,6 +114,7 @@ label {
   top: 280px;
   display: flex;
   justify-content: center;
+  align-items: center;
   cursor: pointer; }
   #circleButton img {
     width: 38px; }
@@ -160,3 +161,99 @@ label[for="year"] span {
   color: var(--color-light-red);
   display: none;
   padding-left: 5px; }
+
+@media (min-width: 1440px) {
+  .ageCalculatorContainer {
+    width: calc(100% - 700px);
+    margin: 100px 15px 150px 15px;
+    border-radius: 25px 25px 230px 25px;
+    padding: 15px;
+    background-color: white;
+    height: 600px; }
+  #inputsDate {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px 200px 0px 50px;
+    margin: 40px 30px 50px 10px;
+    overflow: hidden;
+    column-gap: 30px; }
+  #inputsDate label {
+    width: 45%;
+    height: 100px; }
+  label {
+    font-weight: var(--font-weight-poppins-semibold);
+    color: var(--color-smokey-grey);
+    letter-spacing: 3px;
+    padding: 5px; }
+    label input {
+      width: 100%;
+      border-radius: 10px;
+      border-style: solid;
+      border-color: var(--color-light-grey);
+      margin-top: 5px;
+      height: max-content;
+      font-family: var(--font-poppins);
+      padding-left: 15px; }
+    label input:hover {
+      border-color: var(--color-purple);
+      cursor: pointer; }
+  #circleButton {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-purple);
+    position: absolute;
+    left: 950px;
+    top: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    #circleButton img {
+      width: 60%; }
+  hr {
+    margin-right: 120px;
+    margin-top: 70px; }
+  #showResult #yearResult, #showResult #monthResult, #showResult #dayResult {
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-poppins);
+    font-style: italic;
+    font-size: 82px;
+    font-weight: var(--font-weight-poppins-extrabold); }
+    #showResult #yearResult div, #showResult #monthResult div, #showResult #dayResult div {
+      color: var(--color-purple);
+      margin-right: 10px;
+      margin-top: 10px; }
+  label[for="day"] span {
+    font-size: 16px;
+    letter-spacing: 0;
+    font-style: italic;
+    color: var(--color-light-red);
+    display: none;
+    padding-left: 5px;
+    width: max-content;
+    font-weight: 400;
+    margin: 5px; }
+  label[for="month"] span {
+    font-size: 16px;
+    letter-spacing: 0;
+    font-style: italic;
+    color: var(--color-light-red);
+    display: none;
+    padding-left: 5px;
+    width: max-content;
+    font-weight: 400;
+    margin: 5px; }
+  label[for="year"] span {
+    font-size: 16px;
+    letter-spacing: 0;
+    font-style: italic;
+    color: var(--color-light-red);
+    display: none;
+    padding-left: 5px;
+    width: max-content;
+    font-weight: 400;
+    margin: 5px; } }
