@@ -31,8 +31,8 @@
 
 body {
   font-family: 'popins', sans-serif;
-  display: flex;
-  justify-content: center;
+  display: grid; // grid are better option because is shorter
+  place-content: center; // place-content: center to use with grids
   background-color: var(--color-light-grey);
 }
 input {

@@ -154,6 +154,7 @@ if (form instanceof HTMLFormElement) {
       monthResult.innerText = calculatedMonth;
       dayResult.innerText = calculatedDays;
     }
+    form.reset()
   }
 } else {
   console.log(`isn't a form`);
